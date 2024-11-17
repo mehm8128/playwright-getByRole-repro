@@ -1,6 +1,6 @@
 import test from "@playwright/test";
 
-test("has title", async ({ page }) => {
+test("click two textboxes", async ({ page }) => {
 	await page.goto("http://127.0.0.1:5500/src/index.html");
 
 	const textbox1 = page.getByRole("textbox", { name: "TestField1" });
